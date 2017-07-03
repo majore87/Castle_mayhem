@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Eagle+Lake");
+/*------------------------------*/
+/* SASS Variables */
+/*------------------------------*/
+/*------------------------------*/
+/* General styles */
+/*------------------------------*/
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Lato, sans-serif; }
+
+/* COLUMN OFFSET */
+.col-offset-0 {
+  margin-left: 0%; }
+
+.col-offset-1 {
+  margin-left: 8.33%; }
+
+.col-offset-2 {
+  margin-left: 16.66%; }
+
+.col-offset-3 {
+  margin-left: 25%; }
+
+.col-offset-4 {
+  margin-left: 33.33%; }
+
+.col-offset-5 {
+  margin-left: 41.66%; }
+
+.col-offset-6 {
+  margin-left: 50%; }
+
+.col-offset-7 {
+  margin-left: 58.33%; }
+
+.col-offset-8 {
+  margin-left: 66.66%; }
+
+.col-offset-9 {
+  margin-left: 75%; }
+
+.col-offset-10 {
+  margin-left: 83.33%; }
+
+.col-offset-11 {
+  margin-left: 91.66%; }
+
+/* CLEARFIX */
+.row:before, .row:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+/* Button */
+.btn {
+  width: 200px;
+  height: 50px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+  border: 2px solid;
+  font-size: 20px;
+  background-color: inherit;
+  cursor: pointer;
+  outline: none;
+  background-position: 100% 0%;
+  background-size: 300%;
+  transition: .8s; }
+
+[class^="btn"]:hover {
+  background-position: 0 100%;
+  color: white; }
+
+/*------------------------------*/
+/* Jumbotron styles */
+/*------------------------------*/
+.jumbotron {
+  background: url("../images/castle_dark.jpg");
+  height: calc(100vh - 80px);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  text-align: center; }
+  .jumbotron .row-title {
+    float: right;
+    margin-top: 10%; }
+    .jumbotron .row-title p {
+      color: white;
+      font-size: 60px;
+      font-family: 'Eagle Lake', cursive;
+      margin: 0; }
+  .jumbotron .btn-white {
+    color: #FFF;
+    margin: 0 auto;
+    margin-top: 15vh;
+    text-align: center;
+    font-weight: bold; }
+    .jumbotron .btn-white:hover {
+      color: #000;
+      background-image: linear-gradient(135deg, #FFF 50%, transparent 50%);
+      border-color: #FFF; }
+
+/*------------------------------*/
+/* Footer styles */
+/*------------------------------*/
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #000; }
+  footer .row {
+    text-align: center;
+    line-height: 80px; }
+    footer .row p {
+      margin: 0 15px;
+      color: #FFF;
+      display: inline-block; }
+      footer .row p a {
+        text-decoration: none;
+        color: grey; }
+
+/*------------------------------*/
+/*------------------------------*/
+/* Responsive design */
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/* Desktop */
+/*------------------------------*/
+@media (min-width: 1200px) {
+  .col-l-1 {
+    width: 8.333%; }
+
+  .col-l-2 {
+    width: 16.667%; }
+
+  .col-l-3 {
+    width: 25%; }
+
+  .col-l-4 {
+    width: 33.333%; }
+
+  .col-l-5 {
+    width: 41.667%; }
+
+  .col-l-6 {
+    width: 50%; }
+
+  .col-l-7 {
+    width: 58.333%; }
+
+  .col-l-8 {
+    width: 66.667%; }
+
+  .col-l-9 {
+    width: 75%; }
+
+  .col-l-10 {
+    width: 83.333%; }
+
+  .col-l-11 {
+    width: 91.667%; }
+
+  .col-l-12 {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
