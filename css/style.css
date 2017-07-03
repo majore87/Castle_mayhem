@@ -113,7 +113,21 @@ body {
 /*------------------------------*/
 .game {
   height: calc(100vh - 80px);
-  background: #000; }
+  background: #000;
+  position: relative; }
+  .game .game-screen {
+    border: 2px solid;
+    border-color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 60vw;
+    height: 60vh;
+    margin-top: -30vh; }
+    .game .game-screen .row .icons {
+      color: #FFF; }
 
 /*------------------------------*/
 /* Footer styles */
