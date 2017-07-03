@@ -70,7 +70,7 @@ body {
   outline: none;
   background-position: 100% 0%;
   background-size: 300%;
-  transition: .8s; }
+  transition: 1s; }
 
 [class^="btn"]:hover {
   background-position: 0 100%;
@@ -95,6 +95,8 @@ body {
       font-size: 60px;
       font-family: 'Eagle Lake', cursive;
       margin: 0; }
+    .jumbotron .row-title p:nth-child(3) {
+      font-size: 20px; }
   .jumbotron .btn-white {
     color: #FFF;
     margin: 0 auto;
@@ -103,7 +105,7 @@ body {
     font-weight: bold; }
     .jumbotron .btn-white:hover {
       color: #000;
-      background-image: linear-gradient(135deg, #FFF 50%, transparent 50%);
+      background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 50%, transparent 50%);
       border-color: #FFF; }
 
 /*------------------------------*/

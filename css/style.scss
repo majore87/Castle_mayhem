@@ -7,6 +7,7 @@
 
 $font_stack: Lato, sans-serif;
 $white_color: #FFF;
+$white_color_opacity: rgba(255, 255, 255, .7);
 $black_color: #000;
 
 /*------------------------------*/
@@ -59,7 +60,7 @@ body {
 	outline: none;
 	background-position: 100% 0%;
 	background-size: 300%;
-	transition: .8s;
+	transition: 1s;
 }
 [class^="btn"]:hover {
 	background-position: 0 100%;
@@ -82,10 +83,13 @@ body {
 		float: right;
 		margin-top: 10%;
 		p {
-		color: white;
-		font-size: 60px;
-		font-family: 'Eagle Lake', cursive;
-		margin: 0;
+			color: white;
+			font-size: 60px;
+			font-family: 'Eagle Lake', cursive;
+			margin: 0;
+		}
+		p:nth-child(3) {
+			font-size: 20px;
 		}
 	}
 	.btn-white {
@@ -96,7 +100,7 @@ body {
 		font-weight: bold;
 		&:hover {
 			color: $black_color;
-			background-image: linear-gradient(135deg, $white_color 50%, transparent 50%);
+			background-image: linear-gradient(135deg, $white_color_opacity 50%, transparent 50%);
 			border-color: $white_color;
 		}
 	}

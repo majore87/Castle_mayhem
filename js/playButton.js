@@ -20,15 +20,12 @@ startBtn.addEventListener('mouseleave', function() {
 	startRow.appendChild(startBtn);
 })
 
-
 // Remove jumbotron section and replace it by game section
 var jumbotronScn = document.getElementById('jumbotron'),
 	gameScn = document.getElementById('game'),
 	bodyId = document.getElementsByTagName('body');
 
-
-// Function for add new section and delete older one depends on gameState.
-
+// Function for add new section and delete older one depends on gameState with opacity.
 function setGameElements(gameState) {
 	switch(gameState) {
 		case 'started':
@@ -45,14 +42,14 @@ function setGameElements(gameState) {
 			opacity(gameScn);
 	}
 }
-//
+
+// Default
 setGameElements('notStared');
 
+// Start game if player click on the play button
 startBtn.addEventListener('click', function() {
 	setGameElements('started');
 })
-
-
 
 // function for smooth appeard of elements
 function opacity(param) {
