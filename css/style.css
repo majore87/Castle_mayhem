@@ -13,6 +13,10 @@ body {
   margin: 0;
   font-family: Lato, sans-serif; }
 
+[class*="col-"] {
+  width: 100%;
+  float: left; }
+
 /* COLUMN OFFSET */
 .col-offset-0 {
   margin-left: 0%; }
@@ -114,7 +118,12 @@ body {
 .game {
   height: calc(100vh - 80px);
   background: #000;
-  position: relative; }
+  position: relative;
+  font-family: "Eagle Lake", cursive; }
+  .game h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 40px; }
   .game .game-screen {
     border: 2px solid;
     border-color: #FFF;
@@ -124,10 +133,31 @@ body {
     right: 0;
     margin: 0 auto;
     width: 60vw;
-    height: 60vh;
-    margin-top: -30vh; }
-    .game .game-screen .row .icons {
-      color: #FFF; }
+    height: 75vh;
+    margin-top: -35vh;
+    display: inline; }
+    .game .game-screen .stats {
+      border: 2px solid;
+      border-color: #FFF;
+      display: inline-block; }
+      .game .game-screen .stats h2 {
+        font-family: "Eagle Lake", cursive;
+        color: #FFF;
+        text-align: center;
+        font-size: 30px; }
+      .game .game-screen .stats .row-stats {
+        text-align: center;
+        margin: 15px auto; }
+        .game .game-screen .stats .row-stats .icons {
+          color: #FFF; }
+        .game .game-screen .stats .row-stats p {
+          color: #FFF;
+          font-size: 35px;
+          margin: 0 auto; }
+    .game .game-screen .game-action {
+      display: inline-block; }
+      .game .game-screen .game-action p {
+        color: #FFF; }
 
 /*------------------------------*/
 /* Footer styles */

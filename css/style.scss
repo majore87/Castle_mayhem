@@ -6,6 +6,7 @@
 /*------------------------------*/
 
 $font_stack: Lato, sans-serif;
+$font_game:'Eagle Lake', cursive;
 $white_color: #FFF;
 $white_color_opacity: rgba(255, 255, 255, .7);
 $black_color: #000;
@@ -20,6 +21,10 @@ $black_color: #000;
 body {
 	margin: 0;
 	font-family: $font_stack;
+}
+[class*="col-"] {
+	width: 100%;
+	float: left;
 }
 
 /* COLUMN OFFSET */
@@ -114,6 +119,12 @@ body {
 	height: calc(100vh - 80px);
 	background: $black_color;
 	position: relative;
+	font-family: $font_game;
+	h1 {
+		color: $white_color;
+		text-align: center;
+		font-size: 40px;
+	}
 	.game-screen {
 		border: 2px solid;
 		border-color: $white_color;
@@ -123,14 +134,38 @@ body {
 		right: 0;
 		margin: 0 auto;
 		width: 60vw;
-		height: 60vh;
-		margin-top: -30vh;
-		.row {
-			.icons {
+		height: 75vh;
+		margin-top: -35vh;
+		display: inline;
+		.stats {
+			border: 2px solid;
+			border-color: $white_color;
+			display: inline-block;
+			h2 {
+				font-family: $font_game;
+				color: $white_color;
+				text-align: center;
+				font-size: 30px;
+			}
+			.row-stats {
+				text-align: center;
+				margin: 15px auto;
+				.icons {
+					color: $white_color;
+				}
+				p {
+					color: $white_color;
+					font-size: 35px;
+					margin: 0 auto;
+				}
+			}
+		}
+		.game-action {
+			display: inline-block;
+			p {
 				color: $white_color;
 			}
 		}
-
 	}
 }
 
