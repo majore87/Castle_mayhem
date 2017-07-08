@@ -188,8 +188,15 @@ body {
 			overflow-y: scroll;
 			float: left;
 			height: 60%;
-			p {
-				color: $white_color;
+			position: relative;
+			form {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				input {
+					width: 100%;
+					padding: 8px 20px;
+				}
 			}
 		}
 	}

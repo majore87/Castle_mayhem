@@ -175,9 +175,15 @@ body {
       display: block;
       overflow-y: scroll;
       float: left;
-      height: 60%; }
-      .game .game-screen .update-area p {
-        color: #FFF; }
+      height: 60%;
+      position: relative; }
+      .game .game-screen .update-area form {
+        position: absolute;
+        bottom: 0;
+        width: 100%; }
+        .game .game-screen .update-area form input {
+          width: 100%;
+          padding: 8px 20px; }
 
 /*------------------------------*/
 /* Footer styles */
