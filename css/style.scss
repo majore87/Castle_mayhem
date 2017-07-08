@@ -10,6 +10,7 @@ $font_game:'Eagle Lake', cursive;
 $white_color: #FFF;
 $white_color_opacity: rgba(255, 255, 255, .7);
 $black_color: #000;
+$light_grey: #bfbfbf;
 
 /*------------------------------*/
 /* General styles */
@@ -85,7 +86,7 @@ body {
 
 .scroll::-webkit-scrollbar {
 	width: 12px;
-	background-color: black;
+	background-color: $black_color;
 }
 
 .scroll::-webkit-scrollbar-thumb {
@@ -189,6 +190,10 @@ body {
 			float: left;
 			height: 60%;
 			position: relative;
+			color: $white_color;
+			p {
+				margin: 0px;
+			}
 			form {
 				position: absolute;
 				bottom: 0;
@@ -196,6 +201,8 @@ body {
 				input {
 					width: 100%;
 					padding: 8px 20px;
+					background-color: $light_grey;
+					border: none;
 				}
 			}
 		}

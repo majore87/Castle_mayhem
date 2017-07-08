@@ -89,7 +89,7 @@ body {
 
 .scroll::-webkit-scrollbar {
   width: 12px;
-  background-color: black; }
+  background-color: #000; }
 
 .scroll::-webkit-scrollbar-thumb {
   border-radius: 10px;
@@ -176,14 +176,19 @@ body {
       overflow-y: scroll;
       float: left;
       height: 60%;
-      position: relative; }
+      position: relative;
+      color: #FFF; }
+      .game .game-screen .update-area p {
+        margin: 0px; }
       .game .game-screen .update-area form {
         position: absolute;
         bottom: 0;
         width: 100%; }
         .game .game-screen .update-area form input {
           width: 100%;
-          padding: 8px 20px; }
+          padding: 8px 20px;
+          background-color: #bfbfbf;
+          border: none; }
 
 /*------------------------------*/
 /* Footer styles */
