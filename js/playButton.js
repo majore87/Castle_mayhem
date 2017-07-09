@@ -50,8 +50,17 @@ setGameElements('notStared');
 startBtn.addEventListener('click', function() {
 	setGameElements('started');
 	computerText(startGame.start);
-	// var player = new Player(userPromptElement);
-	// computerText(player.logMessage());
+	playerPressEnter(event);
+
+	if (typeof player !== undefined) {
+
+		if (playerPressEnter.called) {
+			console.log(userPromptElement);
+		var player = new Player(userPromptElement);
+		computerText(player.logMessage());
+		}
+	}
+
 })
 
 
